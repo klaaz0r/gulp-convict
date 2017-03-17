@@ -23,7 +23,7 @@ module.exports = function(options) {
         const config = convict(require(options.schema))
 
         //get the data from the input
-        const envSchema = require(file.path)
+        const envSchema = require(file.path).default
 
         // write the config
         const configObj = JSON.stringify(config.get(), null, 2)
