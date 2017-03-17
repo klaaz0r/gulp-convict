@@ -1,0 +1,45 @@
+{
+  "name": "gulp-convict",
+  "version": "0.0.0",
+  "description": "convict for gulp",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "babel src/index.js -o dist/index.js",
+    "postbuild": "cp src/starwars-names.json dist/starwars-names.json",
+    "test": "mocha src/index.test.js -w --compilers js:babel/register",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec src/index.test.js --compilers js:babel/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kentcdodds/starwars-names.git"
+  },
+  "keywords": [
+    "gulp",
+    "convict"
+  ],
+  "author": "klaaz0r",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "dependencies": {
+    "convict": "^2.0.0",
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3",
+    "vinyl": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel": "5.8.21",
+    "chai": "3.2.0",
+    "codecov.io": "0.1.6",
+    "commitizen": "1.0.4",
+    "cz-conventional-changelog": "1.1.0",
+    "ghooks": "0.3.2",
+    "gulp": "^3.9.1",
+    "istanbul": "0.3.18",
+    "mocha": "2.2.5",
+    "semantic-release": "^4.2.1"
+  }
+}
