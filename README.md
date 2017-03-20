@@ -2,6 +2,10 @@
 
 With this gulp plugin you can use convict in your gulp, it makes it easy to use different configs based on the `NODE_ENV`.
 
+```
+npm install gulp-convict
+```
+
 ## howto
 
 you need to give a source with the folder containing all your schema's matching with your environment, so for example I can have a production.js file in my /config folder
