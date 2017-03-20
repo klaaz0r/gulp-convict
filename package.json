@@ -1,6 +1,6 @@
 {
   "name": "gulp-convict",
-  "version": "0.0.3",
+  "version": "0.0.5",
   "description": "convict for gulp",
   "main": "dist/index.js",
   "scripts": {

@@ -31,7 +31,7 @@ module.exports = function(options) {
         if (options.log) gutil.log('config', gutil.colors.magenta(configObj))
 
         const configFile = new Vinyl({
-          path:  options.name ? `${options.name}`: 'config.json',
+          path:  options.name ? `${options.name}.json`: 'config.json',
           contents: new Buffer(configObj)
         })
 
